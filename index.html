@@ -359,3 +359,71 @@ e.preventDefault();
 alert("Registration details received. Secure M-Pesa payment will be connected in the next step.");
 });
 </script>
+
+<!-- GLOBALJOB SKE REGISTRATION START -->
+<style>
+.gj-register{padding:50px 20px;background:#f1f5f9}
+.gj-box{max-width:650px;margin:auto;background:white;padding:28px;border-radius:16px;box-shadow:0 5px 20px #0002}
+.gj-box h2{text-align:center;color:#123c69}
+.gj-box label{display:block;font-weight:bold;margin-top:15px}
+.gj-box input,.gj-box select{width:100%;padding:13px;margin-top:6px;border:1px solid #ccc;border-radius:8px;font-size:16px;box-sizing:border-box}
+.gj-pay{margin-top:25px;padding:20px;text-align:center;background:#fff4cc;border-radius:10px}
+.gj-pay strong{font-size:30px;color:#123c69}
+.gj-note{font-size:13px;color:#666;text-align:center;line-height:1.5}
+.gj-button{width:100%;margin-top:15px;padding:15px;border:0;border-radius:8px;background:#fdb900;font-size:17px;font-weight:bold}
+</style>
+
+<section class="gj-register" id="registration">
+<div class="gj-box">
+<h2>🌍 Register with GlobalJobsKE</h2>
+<p style="text-align:center">Find international job opportunities in the USA, UK, Canada and Dubai.</p>
+
+<form id="gjForm">
+
+<label>Full Name</label>
+<input name="name" type="text" placeholder="Your full name" required>
+
+<label>Phone Number</label>
+<input name="phone" type="tel" placeholder="07XXXXXXXX" required>
+
+<label>Email</label>
+<input name="email" type="email" placeholder="Your email address" required>
+
+<label>Profession / Job</label>
+<input name="profession" type="text" placeholder="e.g. Driver, Caregiver, Welder" required>
+
+<label>Preferred Country</label>
+<select name="country" required>
+<option value="">Choose country</option>
+<option>🇺🇸 USA</option>
+<option>🇬🇧 United Kingdom</option>
+<option>🇨🇦 Canada</option>
+<option>🇦🇪 Dubai</option>
+</select>
+
+<label>Upload CV</label>
+<input type="file" accept=".pdf,.doc,.docx">
+
+<div class="gj-pay">
+<h3>Registration & Platform Service</h3>
+<strong>KSh 1,000</strong>
+</div>
+
+<p class="gj-note">
+The KSh 1,000 payment is a platform/service registration fee.
+Payment does not guarantee employment, a visa, sponsorship, or a job offer.
+</p>
+
+<button class="gj-button" type="submit">Continue to Payment — KSh 1,000</button>
+
+</form>
+</div>
+</section>
+
+<script>
+document.getElementById("gjForm").addEventListener("submit",function(e){
+e.preventDefault();
+alert("Registration received. M-Pesa payment will be connected in the next development step.");
+});
+</script>
+<!-- GLOBALJOB SKE REGISTRATION END -->
